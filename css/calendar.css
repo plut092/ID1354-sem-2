@@ -1,0 +1,151 @@
+
+#calendar-wrap {
+    width: 80%;
+    margin: auto;
+}
+
+#calendar-wrap header {
+    background: salmon;
+}
+
+#calendar-wrap header h1 {
+    color: white;
+    text-align: center;
+}
+
+#calendar {
+    width: 100%;
+}
+
+#calendar header {
+    margin-bottom: 0;
+}
+#calendar a {
+    color: #8e352e;
+    text-decoration: none;
+}
+
+#calendar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+#calendar li {
+    display: block;
+    float: left;
+    width: 14.34%;
+    padding: 5px;
+    box-sizing:border-box;
+    border: 1px solid #ccc;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+    height: 40px;
+    background: #8e352e;
+    float: left;
+}
+
+#calendar ul.weekdays li {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 20px;
+    border: none !important;
+    padding: 10px 6px;
+    color: #fff;
+    font-size: 13px;
+}
+
+#calendar .days li {
+    height: 180px;
+}
+
+#calendar .day {
+    background: rgba(255, 255, 255, 0.7);
+    height: 180px;
+}
+
+.event img {
+    max-height: 60px;
+    max-width: 120px;
+    float: left;
+}
+
+#calendar .days li:hover {
+    background: rgba(47, 221, 209, 0.7);
+}
+
+#calendar .date {
+    text-align: center;
+    margin-bottom: 2px;
+    padding: 4px;
+    background: #333;
+    color: #fff;
+    width: 20px;
+    border-radius: 50%;
+}
+
+#calendar .event {
+    clear: both;
+    display: block;
+    font-size: 13px;
+    border-radius: 4px;
+    padding: 5px;
+    margin-bottom: 5px;
+    line-height: 14px;
+    background: #e4f2f2;
+    border: 1px solid #b5dbdc;
+    color: #009aaf;
+    text-decoration: none;
+    min-height: 60px;
+}
+
+#calendar .event-desc {
+    color: #666;
+    margin: 3px 0 7px 0;
+    text-decoration: none;
+}
+
+#calendar .event:hover {
+    cursor:pointer;
+    background:#77D6D6;
+    background-size: cover;
+}
+
+#calendar .other-month {
+    background: rgba(0, 0, 0, 0.7);
+    color: #666;
+}
+
+/* ============================
+				Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+    #calendar .weekdays, #calendar .other-month {
+        display: none;
+    }
+
+    #calendar ul {
+        display:block;
+    }
+
+    #calendar li {
+        height: auto !important;
+        border: 1px solid #ededed;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: -1px;
+        display:block;
+        float:left;
+    }
+
+    #calendar .date {
+        float: none;
+    }
+}

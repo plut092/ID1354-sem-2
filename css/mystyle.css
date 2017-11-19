@@ -1,0 +1,238 @@
+@import "recipes.css";
+@import "calendar.css";
+@import "comments.css";
+@import "regbar.css";
+@import "header.css";
+
+/* Global */
+body {
+    font: 16px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-image:  url("../images/TastyRecipes.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footerAnchor {
+    height: 100%;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+
+ul {
+    margin-top: 5px;
+    list-style-type: disc;
+    list-style-position: outside;
+    margin-left: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.transparent-showcase {
+    min-height: 400px;
+    max-height: 423px;
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
+
+/* Showcase */
+#showcase {
+    margin: auto;
+    min-height: 400px;
+    max-width: 960px;
+    width: 100%;
+    background: url("../images/cooking_immersion.jpg") no-repeat;
+    background-position: center;
+    text-align: center;
+    color: white;
+}
+
+#showcase h1 {
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px rgba(0,0,0,0.19);
+}
+
+#showcase p{
+    font-size: 20px;
+    text-shadow: 2px 2px rgba(0,0,0,0.60);
+}
+
+#showcase a {
+    color: white;
+}
+
+
+#firstPage {
+    max-width: 940px;
+    padding:10px;
+    color: white;
+    background: #8d5684;
+    margin: auto;
+}
+
+.register {
+    padding:10px;
+    color: white;
+    background: #8d5684;
+    margin: auto;
+}
+
+#firstPage h1 {
+    font-size: 16px;
+    float: left;
+}
+
+.register h1 {
+    float: right;
+    text-shadow: 1px 1px rgba(0,0,0,0.19);
+    margin: auto;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 16px;
+
+}
+
+.register formFirstpage {
+    float: left;
+    margin-left: 40px;
+}
+
+.register form {
+    float: right;
+    margin-left: 40px;
+}
+.button_register_large {
+    background-color: salmon;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.button_register {
+    background-color: salmon;
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: pointer;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    box-shadow: 0 6px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+    margin: auto;
+    max-width: 50%;
+    min-width: 350px;
+}
+
+#boxes .box {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    max-width: 100%;
+    background-color: rgba(255,255,255,0.7);
+    margin: 20px;
+}
+
+#boxes .box img {
+    max-height: 240px;
+    max-width: 100%;
+}
+
+#boxes a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Sidebar */
+
+aside#comments {
+    width: 30%;
+    margin-top: 10px;
+    height: 100%;
+}
+aside#comments textarea {
+    text-align: left;
+}
+
+@media(max-width: 768px) {
+
+    #boxes .box {
+        max-width: 100%;
+        margin: auto;
+        margin-top: 20px;
+    }
+}
+
+
+/* Signup.php */
+
+.signup-form {
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.signup-form input{
+    width: 90%;
+    height: 40px;
+    padding: 0px 5%;
+    margin-bottom: 4px;
+    border: none;
+    background-color: white;
+    color: #111;
+    line-height: 40px;
+}
+
+.signup-form button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: salmon;
+    color: white;
+    cursor: pointer;
+}
+.signup-form button:hover {
+    background-color: #8d5684;
+    color: salmon;
+}
+
+.main-wrapper h2 {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    text-shadow: 2px 2px rgba(0,0,0,0.4);
+}
